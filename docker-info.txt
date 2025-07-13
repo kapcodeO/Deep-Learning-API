@@ -9,4 +9,6 @@
 
 # stop docker container
     [*] docker stop dl-api
-    
+
+# delete docker container
+    [*] docker rm dl-api
