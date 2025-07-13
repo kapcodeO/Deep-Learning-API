@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *.class
+translations.db
 
 # C extensions
 *.so
