@@ -1,0 +1,9 @@
+# run this for macOS users if you plan to deploy on Azure: (for building docker image)
+    [*] docker buildx build --platform linux/amd64 -t dl-api .
+
+# run this for linux for building docker image
+    [*] docker build -t dl-api .
+
+# run this for macOS users: (for running docker container)
+    [*] docker run -d --name dl-api -p 8000:8000 dl-api
+
