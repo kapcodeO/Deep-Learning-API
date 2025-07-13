@@ -7,3 +7,6 @@
 # run this for macOS users: (for running docker container)
     [*] docker run -d --name dl-api -p 8000:8000 dl-api
 
+# stop docker container
+    [*] docker stop dl-api
+    
