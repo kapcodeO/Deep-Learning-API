@@ -11,6 +11,5 @@ class TranslationModel(Model):
 
 
 db.connect()
-db.drop_tables([TranslationModel])
 db.create_tables([TranslationModel])
 print("✅ Database Initialized")
