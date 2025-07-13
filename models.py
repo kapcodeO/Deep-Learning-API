@@ -1,16 +1,16 @@
-from peewee import SqLiteDatabase, TextField, CharField,  Model
+from peewee import SqliteDatabase, TextField, Model
 
-db = SqLiteDatabase(["translations.db"])
+db = SqliteDatabase("translations.db")
 
 class TranslationModel(Model):
     text = TextField()
-    base_lang_code = CharField()
-    final_lang_model = CharField()
     translation = TextField(null=True)
 
     class Meta:
         database = db
 
+
 db.connect()
+db.drop_tables([TranslationModel])
 db.create_tables([TranslationModel])
 print("✅ Database Initialized")

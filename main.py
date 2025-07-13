@@ -1,3 +1,12 @@
+from fastapi import FastAPI, BackgroundTasks
+from pydantic import BaseModel, field_validator
+from models import db
+import tasks
+
+app = FastAPI()
+
+
+
 # Route 1: \
 # root node to check everything is fine
 # returns {"message" : "Hello World"}
